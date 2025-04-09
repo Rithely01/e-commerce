@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #89ff89;
+    background-color: #89caff;
     width: 100%;
     padding: 20px 0;
 
@@ -39,13 +39,24 @@ header {
 
 .navbar input {
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    border-radius: 15px;
+    
 }
 
-.menu{
+
+.lista-header {
+    list-style: none;
+    gap: 15px;
     display: flex;
-    gap: 20px;
+}
+
+.bars{
+    display: none;
+}
+
+.menu {
+    position: relative;
 
 }
 
@@ -60,9 +71,11 @@ header {
     transform: scale(1.06);
 }
 
+
+
 .banner {
     width: 89%;
-    height: 300px;
+    height: 350px;
     overflow: hidden;
     position: relative;
     margin: 20px ;
@@ -114,3 +127,20 @@ footer {
     gap: 10px;
 }
 
+@media screen and (max-width: 703px) {
+    .lista-header {
+        /* display: none; */
+        flex-direction: column;
+        background-color: #d1d1d1;
+        padding: 10px;
+        position: absolute;
+        top: -40px;
+        left: -66px;
+
+    }
+
+    /* .bars {
+        display: block;
+        cursor: pointer;
+    } */
+}
